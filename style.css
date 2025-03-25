@@ -163,6 +163,12 @@ body {
 	box-shadow: 2px 7px 23px -12px rgba(0, 0, 0, 0.39);
 }
 
+.card__btn:hover {
+	cursor: pointer;
+	transform: scale(0.97);
+	border: #e3ff671e solid 3px;
+}
+
 .card__bottom {
 	background-color: hsl(179, 55%, 50%);
 	padding: 1.5rem 1.8rem;
@@ -178,4 +184,38 @@ body {
 .card__bottom-description p {
 	color: #d4f4f4;
 	font-size: 0.9rem;
+}
+
+@media (min-width: 1440px) {
+	.card {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 40rem;
+		height: 30rem;
+	}
+
+	.card__top {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		padding: 2.3rem 2.5rem 1.2rem 2.5rem;
+	}
+
+	.card__top-title {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.card__top-subtitle {
+		font-size: 1.1rem;
+		margin-bottom: 0.6rem;
+	}
+
+	.card__top-description {
+		font-size: 1rem;
+	}
+
+	.card__middle-title {
+		font-weight: 700;
+	}
 }
